@@ -1,0 +1,8 @@
+{
+    "name": "asus/lab-3",
+    "description": "''",
+    "require": {
+        "firebase/php-jwt": "^6.11",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
