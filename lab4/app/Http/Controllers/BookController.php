@@ -13,9 +13,7 @@ class BookController extends Controller
     {
         $books = Book::all();
         $bookCount = count($books);
-        $borrowedCount = Book::where(function ($query) {
-            $query->whereNotNull('borrowed_at');
-        })->count();
+        $borrowedCount = Book::whereNotNull('borrowed_by')->count();
 
 
         return view('books.index', compact('books', 'bookCount', 'borrowedCount'));

@@ -27,7 +27,7 @@
                     <td>{{ $book->isbn }}</td>
                     <td>{{ $book->genre }}</td>
                     <td>{{ $book->borrowed_by }}</td>
-                    <td>{{ $book->borrowed_at }}</td>
+                    <td>{{ $book->borrow_date }}</td>
                     <td>{{ $book->return_date }}</td>
                     <td>
                         <a href="{{ route('books.edit', $book) }}" class="btn btn-sm btn-secondary">Edit</a>
